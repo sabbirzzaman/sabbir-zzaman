@@ -1,11 +1,16 @@
 import React from 'react';
-import './Home.css'
+import LeftSidebar from '../../Common/LeftSidebar/LeftSidebar';
+import RightSidebar from '../../Common/RightSidebar/RightSidebar';
+import './Home.css';
 
 const Home = () => {
     return (
-        <div>
-            
-        </div>
+        <section className="homeSection">
+            <div className="pageContainer">
+                <LeftSidebar></LeftSidebar>
+                <RightSidebar></RightSidebar>
+            </div>
+        </section>
     );
 };
 

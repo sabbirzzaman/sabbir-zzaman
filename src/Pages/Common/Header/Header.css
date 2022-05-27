@@ -1,15 +1,11 @@
-.header-section {
-    height: 80px;
-}
-
-.header-section .container {
-    height: 80px;
+.headerSection .pageContainer {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.site-logo {
+.siteLogo {
     cursor: pointer;
 }
 
@@ -22,7 +18,7 @@
 
 .navigation a {
     color: #ccd6f6;
-    transition: .3s ease-in-out;
+    transition: var(--tr);
 }
 
 .navigation a:hover {

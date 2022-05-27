@@ -4,20 +4,20 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header className="header-section">
-            <div className="container">
-                <div className="site-logo">
+        <header className="headerSection">
+            <div className="pageContainer">
+                <div className="siteLogo">
                     <h3>
-                        SZ<span className='highlight'>.</span>
+                        SZ<span className="highlight">.</span>
                     </h3>
                 </div>
 
-                <nav className='navigation'>
+                <nav className="navigation">
                     <Link to="/">Home</Link>
                     <Link to="/">Experiences</Link>
                     <Link to="/">Works</Link>
                     <Link to="/">Contact</Link>
-                    <button className='btn'>Resume</button>
+                    <button className="btn">Resume</button>
                 </nav>
             </div>
         </header>
