@@ -1,0 +1,30 @@
+.header-section {
+    height: 80px;
+}
+
+.header-section .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 30px;
+}
+
+.navigation a {
+    color: #ccd6f6;
+    transition: .3s ease-in-out;
+}
+
+.navigation a:hover {
+    color: #64ffda;
+}
