@@ -8,15 +8,16 @@
     color: var(--sideBar);
 }
 
-.stickyMail {
+.stickyRight {
     display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
+    height: calc(100vh - 100px);
+    justify-content: flex-end;
     align-items: center;
     position: relative;
 }
 
-.stickyMail a {
+.stickyRight a {
     transform: rotate(90deg);
     color: var(--sideBar);
     margin-bottom: 110px;
@@ -25,12 +26,12 @@
     transition: var(--tr);
 }
 
-.stickyMail a:hover {
+.stickyRight a:hover {
     color: var(--primary);
     transform: rotate(90deg) translate(-3px);
 }
 
-.stickyMail::after {
+.stickyRight::after {
     content: '';
     display: block;
     width: 2px;

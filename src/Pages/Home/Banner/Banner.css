@@ -1,0 +1,26 @@
+.bannerSection .container {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title-sm {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.title-dim {
+    color: var(--body);
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.btn-banner {
+    padding: 20px 28px;
+}

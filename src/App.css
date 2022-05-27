@@ -1,10 +1,14 @@
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: var(--heading);
 }
 
 h1 {
-    font-size: 80px;
-    line-height: 88px;
+    font-size: 60px;
+    line-height: 85px;
 }
 
 h2 {
@@ -22,9 +26,15 @@ h4 {
     line-height: 31px;
 }
 
-h4 {
+h5 {
     font-size: 22px;
     line-height: 29px;
+}
+
+p,
+a {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .container {
@@ -40,7 +50,8 @@ h4 {
     padding: 0px 150px;
 }
 
-a, .highlight {
+a,
+.highlight {
     color: var(--primary);
 }
 
@@ -50,12 +61,13 @@ a, .highlight {
     border: 1px solid var(--primary);
     border-radius: 4px;
     padding: 12px 16px;
-    margin-left: 15px;
     font-size: 14px;
+    letter-spacing: 1px;
+    font-family: var(--secondary-font);
     cursor: pointer;
     transition: var(--tr);
 }
 
 .btn:hover {
-    background-color: rgba(100,255,218,0.1);
+    background-color: rgba(100, 255, 218, 0.1);
 }

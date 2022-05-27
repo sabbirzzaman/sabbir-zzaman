@@ -24,3 +24,7 @@
 .navigation a:hover {
     color: #64ffda;
 }
+
+.header-btn {
+    margin-left: 15px;
+}

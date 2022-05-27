@@ -7,7 +7,7 @@
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
-    --tr:.3s ease-in-out;
+    --tr: 0.3s ease-in-out;
 }
 
 * {
@@ -20,8 +20,7 @@
 
 body {
     font-family: var(--primary-font);
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 16px;
     background-color: var(--bg);
     color: var(--body);
 }

@@ -4,7 +4,7 @@ import './LeftSidebar.css';
 const LeftSidebar = () => {
     return (
         <div className="stickyLeftSidebar">
-            <div className="stickyIcons">
+            <div className="stickyLeft">
             <a href="/github" target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

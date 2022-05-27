@@ -1,16 +1,20 @@
 import React from 'react';
 import LeftSidebar from '../../Common/LeftSidebar/LeftSidebar';
 import RightSidebar from '../../Common/RightSidebar/RightSidebar';
+import Banner from '../Banner/Banner';
 import './Home.css';
 
 const Home = () => {
     return (
-        <section className="homeSection">
+        <main className="homePage">
             <div className="pageContainer">
                 <LeftSidebar></LeftSidebar>
+                <div className="pageMainContainer">
+                    <Banner></Banner>
+                </div>
                 <RightSidebar></RightSidebar>
             </div>
-        </section>
+        </main>
     );
 };
 
