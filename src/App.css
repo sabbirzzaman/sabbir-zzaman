@@ -63,11 +63,16 @@ a,
     padding: 12px 16px;
     font-size: 14px;
     letter-spacing: 1px;
-    font-family: var(--secondary-font);
+    font-family: var(--font-secondary);
     cursor: pointer;
     transition: var(--tr);
 }
 
 .btn:hover {
     background-color: rgba(100, 255, 218, 0.1);
+}
+
+.title-sm {
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
 }

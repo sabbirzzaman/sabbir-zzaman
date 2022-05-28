@@ -18,6 +18,8 @@
 
 .navigation a {
     color: #ccd6f6;
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
     transition: var(--tr);
 }
 
