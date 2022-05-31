@@ -3,9 +3,11 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer className='footer'>
+            <div className="container">
+                <a href='#' className='footerText'>Sabbir Zzaman &copy; All Right Reserved</a>
+            </div>
+        </footer>
     );
 };
 

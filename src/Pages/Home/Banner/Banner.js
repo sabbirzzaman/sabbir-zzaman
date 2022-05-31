@@ -11,7 +11,7 @@ const Banner = () => {
 
                 <p className='banner-text'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
 
-                <button className="btn btn-banner">Little About Me</button>
+                <button className="btn btn-large">Get In Touch</button>
             </div>
         </section>
     );
