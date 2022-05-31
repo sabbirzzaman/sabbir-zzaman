@@ -3,22 +3,24 @@ import './Contact.css';
 
 const Contact = () => {
     return (
-        <section className="contactSection">
+        <section id="contact" className="contactSection">
             <div className="container">
                 <p className="title-sm">
                     <span className="highlight">Contact Me</span>
                 </p>
-                <h2 className='contactTitle'>Get In Touch</h2>
-                <p className='contactText'>
-                    Although I’m not currently looking for any new
-                    opportunities, my inbox is always open. Whether you have a
-                    question or just want to say hi, I’ll try my best to get
-                    back to you!
+                <h2 className="contactTitle">Get In Touch</h2>
+                <p className="contactText">
+                    My inbox is always open. If you want to work with me or for
+                    any kind of inquiry please feel free to send me a message. I
+                    would love to connect and have a conversation with you!
                 </p>
 
-                <button className="btn btn-large">
+                <a
+                    href="mailto:sabbirzzaman7@gmail.com"
+                    className="btn btn-large"
+                >
                     Say Hello
-                </button>
+                </a>
             </div>
         </section>
     );

@@ -1,59 +1,55 @@
 import React from 'react';
-import project1 from '../../../images/project-1.png';
+import project1 from '../../../images/project-1.jpg';
+import project2 from '../../../images/project-2.jpg';
+import project3 from '../../../images/project-3.jpg';
 import PortfolioCard from '../PortfolioCard/PortfolioCard';
 import './Portfolio.css';
 
 const Portfolio = () => {
     const projects = [
         {
-            name: 'Halcyon Theme',
-            img: project1,
+            name: 'Car Shifter',
+            img: project2,
             details:
-                'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+                'Car Shifter is a full functional full-stack project. Admins have access to control the entire website and users. Users can create their account and purchase larger quantity of parts by making payment. Users and Admin can also set their profile information.',
             technologies: [
-                'VS Code',
-                'Sublime Text',
-                'Atom',
-                'iTerm2',
-                'Hyper',
+                'React.js',
+                'Node.js',
+                'Express.js',
+                'MondoDb',
+                'Stripe',
             ],
-            liveLink: '#',
-            repoLink: '#',
+            liveLink: 'https://car-shifter.web.app/',
+            repoLink: 'https://github.com/sabbirzzaman/car-shifter-client',
         },
         {
-            name: 'Halcyon Theme',
+            name: 'Go Autocar',
             img: project1,
             details:
-                'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+                'Go AutoCar is a car dealer (warehouse/inventory) management website. A full-stack project where author can manage their warehouse or inventory through this website. Also users can create their accounts and add cars to the inventory. ',
             technologies: [
-                'VS Code',
-                'Sublime Text',
-                'Atom',
-                'iTerm2',
-                'Hyper',
+                'React.js',
+                'Axios',
+                'Node.js',
+                'Express.js',
+                'MondoDb',
             ],
-            liveLink: '#',
-            repoLink: '#',
+            liveLink: 'https://go-autocar.web.app/',
+            repoLink: 'https://github.com/sabbirzzaman/go-autocar-client',
         },
         {
-            name: 'Halcyon Theme',
-            img: project1,
+            name: 'Tim Walter',
+            img: project3,
             details:
-                'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-            technologies: [
-                'VS Code',
-                'Sublime Text',
-                'Atom',
-                'iTerm2',
-                'Hyper',
-            ],
-            liveLink: '#',
-            repoLink: '#',
+                'A website for professional lawyers who can provide services through this website. The author can sell services from this website. Users can create their accounts and purchase the services from this website.',
+            technologies: ['VS Code', 'React.js', 'Firebase', 'React Router'],
+            liveLink: 'https://tim-walter.web.app/',
+            repoLink: 'https://github.com/sabbirzzaman/tim-walter',
         },
     ];
 
     return (
-        <section className="portfolioSection">
+        <section id="works" className="portfolioSection">
             <div className="container">
                 <div className="sectionTitle">
                     <h3>Some Things I’ve Built</h3>

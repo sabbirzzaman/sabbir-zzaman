@@ -5,7 +5,7 @@ const RightSidebar = () => {
     return (
         <div className='stickyRightSidebar'>
             <div className="stickyRight">
-                <a href="mailto:sztonmoy7@gmail.com">sztonmoy7@gmail.com</a>
+                <a href="mailto:sabbirzzaman7@gmail.com">sabbirzzaman7@gmail.com</a>
             </div>
         </div>
     );

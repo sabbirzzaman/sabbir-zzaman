@@ -5,7 +5,7 @@ const LeftSidebar = () => {
     return (
         <div className="stickyLeftSidebar">
             <div className="stickyLeft">
-            <a href="/github" target="_blank">
+            <a href="https://github.com/sabbirzzaman" target="_blank" rel="noreferrer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
@@ -22,7 +22,7 @@ const LeftSidebar = () => {
                 </svg>
             </a>
 
-            <a href="/instagram" target="_blank">
+            <a href="https://www.instagram.com/sztonmoy/" target="_blank" rel="noreferrer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
@@ -48,7 +48,7 @@ const LeftSidebar = () => {
                 </svg>
             </a>
 
-            <a href="/linkedin" target="_blank">
+            <a href="https://twitter.com/sabbir_zzaman" target="_blank" rel="noreferrer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"

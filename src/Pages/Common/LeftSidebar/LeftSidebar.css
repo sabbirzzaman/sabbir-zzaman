@@ -6,6 +6,8 @@
 
 .stickyLeft {
     display: flex;
+    position: fixed;
+    bottom: 0;
     flex-direction: column;
     height: calc(100vh - 100px);
     justify-content: flex-end;

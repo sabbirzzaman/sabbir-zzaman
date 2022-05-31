@@ -3,10 +3,19 @@ import './About.css';
 import image from '../../../images/sabbirzzaman.jpg';
 
 const About = () => {
-    const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 'Express.js', 'MongoDB']
+    const skills = [
+        'JavaScript (ES6)',
+        'React',
+        'Bootstrap',
+        'Tailwind CSS',
+        'Firebase',
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+    ];
 
     return (
-        <section className="aboutSection">
+        <section id="about" className="aboutSection">
             <div className="container">
                 <div className="sectionTitle">
                     <h3>Little About Me</h3>
@@ -15,31 +24,31 @@ const About = () => {
                 <div className="aboutMe">
                     <div className="AboutMeContent">
                         <p>
-                            Hello! My name is Brittany and I enjoy creating
-                            things that live on the internet. My interest in web
-                            development started back in 2012 when I decided to
-                            try editing custom Tumblr themes — turns out hacking
-                            together a custom reblog button taught me a lot
-                            about HTML & CSS!
-                        </p>
-                        <p>
-                            Fast-forward to today, and I’ve had the privilege of
-                            working at an advertising agency, a start-up, a huge
-                            corporation, and a student-led design studio. My
-                            main focus these days is building accessible,
-                            inclusive products and digital experiences at
-                            Upstatement for a variety of clients.
+                            As a Frontend Developer I started my journey in
+                            2018. As well as work I also continued to keep
+                            learning and exploring new technologies for updating
+                            myself. I've made myself more efficient and
+                            productive. I love to learn new technologies and
+                            work on them. I have strong working skills with
+                            React.js and JavaScript in Building functional UI
+                            for both smaller and larger projects.
                         </p>
 
                         <p>
-                            Here are a few technologies I’ve been working with
+                            Quality-focused and Self-motivated trying to make
+                            myself more efficient day by day to reach my target
+                            to be a full-stack engineer.
+                        </p>
+
+                        <p>
+                            Here are a few technologies I've been working with
                             recently:
                         </p>
 
-                        <ul className='skillsList'>
-                            {
-                                skills.map(skill => <li>{skill}</li>)
-                            }
+                        <ul className="skillsList">
+                            {skills.map((skill, index) => (
+                                <li key={index}>{skill}</li>
+                            ))}
                         </ul>
                     </div>
                     <div className="AboutMeImg">
