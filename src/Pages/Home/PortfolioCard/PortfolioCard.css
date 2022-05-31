@@ -117,3 +117,10 @@
 .projectLink a svg:hover {
     color: var(--green);
 }
+
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .projectContent {
+        width: 65%;
+    }
+}

@@ -38,3 +38,10 @@
     margin: 0px auto;
     background-color: var(--light-steel);
 }
+
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (max-width: 992px) {
+    .stickyRightSidebar {
+        display: none;
+    }
+}

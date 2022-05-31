@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 52px;
     line-height: 66px;
 }
 
@@ -52,7 +52,6 @@ img {
 li {
     font-family: var(--font-secondary);
     letter-spacing: 1px;
-    
 }
 
 /* container */
@@ -114,11 +113,61 @@ a,
 }
 
 .sectionTitle h3::after {
-    content: "";
+    content: '';
     display: block;
     position: relative;
     width: 300px;
     height: 1px;
     margin-left: 20px;
     background-color: var(--light-navy);
+}
+
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .pageMainContainer {
+        padding: 0px 70px;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    h5 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    p,
+    a {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+/* Extra small devices (phones, 688px and down) */
+@media only screen and (max-width: 688px) {
+    .container {
+        max-width: 325px;
+        margin: 0 auto;
+    }
 }

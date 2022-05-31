@@ -42,7 +42,7 @@ const Portfolio = () => {
             img: project3,
             details:
                 'A website for professional lawyers who can provide services through this website. The author can sell services from this website. Users can create their accounts and purchase the services from this website.',
-            technologies: ['VS Code', 'React.js', 'Firebase', 'React Router'],
+            technologies: ['VsCode', 'React.js', 'Firebase', 'ReactRouter'],
             liveLink: 'https://tim-walter.web.app/',
             repoLink: 'https://github.com/sabbirzzaman/tim-walter',
         },

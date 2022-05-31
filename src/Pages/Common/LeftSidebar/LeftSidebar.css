@@ -35,10 +35,17 @@
 }
 
 .stickyLeft::after {
-    content: "";
+    content: '';
     display: block;
     width: 2px;
     height: 90px;
     margin: 0px auto;
     background-color: var(--light-steel);
+}
+
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (max-width: 992px) {
+    .stickyLeftSidebar {
+        display: none;
+    }
 }
