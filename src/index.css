@@ -1,10 +1,12 @@
 :root {
-    --primary: #64ffda;
-    --bg: #0a192f;
+    --green: #64ffda;
+    --navy-bg: #0a192f;
+    --navy: #112240;
     --light-navy: #233554;
-    --heading: #ccd6f6;
-    --sideBar: #a8b2d1;
-    --body: #8892b0;
+    --lightest-steel: #ccd6f6;
+    --light-steel: #a8b2d1;
+    --slate: #8892b0;
+    --shadow: rgba(2,12,27,0.7);
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
@@ -22,8 +24,8 @@
 body {
     font-family: var(--font-primary);
     font-size: 16px;
-    background-color: var(--bg);
-    color: var(--body);
+    background-color: var(--navy-bg);
+    color: var(--slate);
 }
 
 body::-webkit-scrollbar {
@@ -31,6 +33,6 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--body);
+    background-color: var(--slate);
     border-radius: 8px;
 }

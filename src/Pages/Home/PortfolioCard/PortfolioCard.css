@@ -1,0 +1,104 @@
+.projectCard {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.projectCard:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.projectCard:nth-child(2) {
+    flex-direction: row;
+}
+
+.projectContent {
+    width: 50%;
+    text-align: right;
+    z-index: 10;
+}
+
+.projectCard:nth-child(2) .projectContent {
+    text-align: left;
+}
+
+.projectImg {
+    width: 50%;
+}
+
+.projectImg img {
+    width: 115%;
+}
+
+.projectCard:nth-child(2) .projectImg {
+    width: 55%;
+}
+
+.projectCard:nth-child(2) .projectImg img {
+    width: 100%;
+}
+
+.projectContent .title-sm {
+    margin-bottom: 0;
+}
+
+.projectImg img {
+    box-shadow: 0 10px 30px -15px var(--shadow);
+    transition: var(--tr);
+    z-index: 1;
+}
+
+.projectName {
+    margin-bottom: 20px;
+}
+
+.projectDetails {
+    box-shadow: 0 20px 30px -15px var(--shadow);
+    background-color: var(--navy);
+    color: var(--light-steel);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.projectCard:nth-child(2) .projectDetails {
+    width: 115%;
+}
+
+.projectTechList {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.projectTechList p {
+    font-size: 14px;
+    color: var(--light-steel);
+}
+
+.projectLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.projectCard:nth-child(2) .projectLink,
+.projectCard:nth-child(2) .projectTechList {
+    justify-content: flex-start;
+}
+
+.projectLink a:nth-child(2) {
+    margin-top: -4px;
+}
+
+.projectLink a svg {
+    width: 20px;
+    height: 20px;
+    color: var(--lightest-steel);
+    transition: var(--tr);
+}
+
+.projectLink a svg:hover {
+    color: var(--green);
+}

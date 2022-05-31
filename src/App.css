@@ -1,9 +1,10 @@
+/* text and headings style */
 h1,
 h2,
 h3,
 h4,
 h5 {
-    color: var(--heading);
+    color: var(--lightest-steel);
 }
 
 h1 {
@@ -22,8 +23,8 @@ h3 {
 }
 
 h4 {
-    font-size: 28px;
-    line-height: 31px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 h5 {
@@ -37,16 +38,24 @@ a {
     line-height: 26px;
 }
 
+.text-sm {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* images style */
 img {
     width: 100%;
 }
 
+/* list style */
 li {
     font-family: var(--font-secondary);
     letter-spacing: 1px;
     
 }
 
+/* container */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -60,15 +69,16 @@ li {
     padding: 0px 150px;
 }
 
+/* button and highlight */
 a,
 .highlight {
-    color: var(--primary);
+    color: var(--green);
 }
 
 .btn {
     background-color: transparent;
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    color: var(--green);
+    border: 1px solid var(--green);
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 14px;
@@ -82,7 +92,28 @@ a,
     background-color: rgba(100, 255, 218, 0.1);
 }
 
+/* section title */
+
 .title-sm {
     font-family: var(--font-secondary);
     letter-spacing: 1px;
+}
+
+.sectionTitle {
+    margin-bottom: 40px;
+}
+
+.sectionTitle h3 {
+    display: flex;
+    align-items: center;
+}
+
+.sectionTitle h3::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--light-navy);
 }

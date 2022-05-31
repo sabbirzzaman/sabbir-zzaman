@@ -18,7 +18,7 @@
 
 .stickyRight a {
     transform: rotate(90deg);
-    color: var(--sideBar);
+    color: var(--light-steel);
     margin-bottom: 110px;
     font-size: 14px;
     letter-spacing: 1px;
@@ -26,7 +26,7 @@
 }
 
 .stickyRight a:hover {
-    color: var(--primary);
+    color: var(--green);
     transform: rotate(90deg) translate(-3px);
 }
 
@@ -36,5 +36,5 @@
     width: 2px;
     height: 90px;
     margin: 0px auto;
-    background-color: var(--sideBar);
+    background-color: var(--light-steel);
 }

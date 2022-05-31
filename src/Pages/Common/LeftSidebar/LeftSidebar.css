@@ -14,7 +14,7 @@
 }
 
 .stickyLeft a {
-    color: var(--sideBar);
+    color: var(--light-steel);
     transition: var(--tr);
 }
 
@@ -23,7 +23,7 @@
 }
 
 .stickyLeft a:hover {
-    color: var(--primary);
+    color: var(--green);
     transform: translateY(-3px);
 }
 
@@ -38,5 +38,5 @@
     width: 2px;
     height: 90px;
     margin: 0px auto;
-    background-color: var(--sideBar);
+    background-color: var(--light-steel);
 }

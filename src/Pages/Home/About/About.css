@@ -2,25 +2,6 @@
     padding: 80px 0px;
 }
 
-.sectionTitle {
-    margin-bottom: 40px;
-}
-
-.sectionTitle h3 {
-    display: flex;
-    align-items: center;
-}
-
-.sectionTitle h3::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: var(--light-navy);
-}
-
 .aboutMe {
     display: grid;
     grid-template-columns: 6fr 4fr;
@@ -48,7 +29,7 @@
     content: "▹";
     position: absolute;
     left: 0px;
-    color: var(--primary);
+    color: var(--green);
     line-height: 12px;
 }
 
@@ -57,7 +38,7 @@
 }
 
 .AboutMeImg::after {
-    border: 2px solid var(--primary);
+    border: 2px solid var(--green);
     top: 20px;
     left: 20px;
     z-index: -1;

@@ -3,6 +3,7 @@ import LeftSidebar from '../../Common/LeftSidebar/LeftSidebar';
 import RightSidebar from '../../Common/RightSidebar/RightSidebar';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
+import Portfolio from '../Portfolio/Portfolio';
 import './Home.css';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
                 <div className="pageMainContainer">
                     <Banner></Banner>
                     <About></About>
+                    <Portfolio></Portfolio>
                 </div>
                 <RightSidebar></RightSidebar>
             </div>
