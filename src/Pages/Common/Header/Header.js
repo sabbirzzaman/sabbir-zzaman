@@ -7,10 +7,12 @@ const Header = () => {
 
     const [header, setHeader] = useState('headerSection');
 
+    const [open, setOpen] = useState(false)
+
     const listenScrollEvent = () => {
         window.scrollY < 10
-      ? setHeader("headerSection")
-      : setHeader("headerSectionScroll")
+            ? setHeader('headerSection')
+            : setHeader('headerSectionScroll');
     };
 
     useEffect(() => {
@@ -22,13 +24,13 @@ const Header = () => {
     return (
         <header className={header}>
             <div className="pageContainer">
-                <div className="siteLogo">
-                    <h3 onClick={() => navigate('/')}>
+                <div>
+                    <h3 className='siteLogo' onClick={() => navigate('/')}>
                         SZ<span className="highlight">.</span>
                     </h3>
                 </div>
 
-                <nav className="navigation">
+                <nav className={!open ? 'navigation' : 'navigation mobile-nav'}>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#works">Works</a>
@@ -42,6 +44,14 @@ const Header = () => {
                         Resume
                     </a>
                 </nav>
+                <div className="hamburger">
+                    <div className='wrapper'>
+                        <input onClick={() => setOpen(!open)} type="checkbox" />
+                        <div className='bun'>
+                            <div className='burger'></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
     );
