@@ -237,6 +237,10 @@ a,
         padding: 0;
     }
 
+    .pageContainer {
+        padding: 0px 40px;
+    }
+
     .container {
         max-width: 325px;
     }
