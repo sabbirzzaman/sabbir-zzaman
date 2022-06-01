@@ -38,11 +38,6 @@ a {
     line-height: 26px;
 }
 
-.text-sm {
-    font-size: 14px;
-    line-height: 24px;
-}
-
 /* images style */
 img {
     width: 100%;
@@ -103,6 +98,11 @@ a,
     letter-spacing: 1px;
 }
 
+.text-sm {
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .sectionTitle {
     margin-bottom: 40px;
 }
@@ -158,16 +158,123 @@ a,
     }
 
     p,
-    a {
+    a,
+    li {
         font-size: 14px;
         line-height: 25px;
     }
+
+    .text-sm {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .sectionTitle {
+        margin-bottom: 30px;
+    }
 }
 
-/* Extra small devices (phones, 688px and down) */
-@media only screen and (max-width: 688px) {
+/* Extra small devices (576px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .pageMainContainer {
+        padding: 0 50px;
+    }
+
+    .container {
+        max-width: 640px;
+    }
+
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    h5 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-large {
+        padding: 12px 24px;
+    }
+}
+
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .pageMainContainer {
+        padding: 0;
+    }
+
     .container {
         max-width: 325px;
-        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    h5 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-large {
+        padding: 12px 24px;
     }
 }

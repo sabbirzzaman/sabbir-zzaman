@@ -47,12 +47,12 @@
     margin-bottom: 0;
 }
 
-.projectContent h4 {
+.for-desktop h4, .for-mobile h4 {
     display: inline-block;
     transition: var(--tr);
 }
 
-.projectContent h4:hover {
+.for-desktop h4:hover, .for-mobile h4:hover {
     color: var(--green);
 }
 
@@ -118,9 +118,93 @@
     color: var(--green);
 }
 
+.for-mobile {
+    display: none;
+}
+
 /* Medium devices (landscape tablets, 689px and up) */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     .projectContent {
         width: 65%;
+    }
+
+    .projectCard:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}
+
+/* Extra small devices (576px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .projectContent {
+        width: 70%;
+    }
+
+    .projectCard:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .projectCard:nth-child(2) .projectDetails {
+        width: 105%;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .projectCard:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    
+    .projectCard, .projectCard:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    
+    .projectContent {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .projectCard:nth-child(2) .projectContent {
+        text-align: left;
+    }
+    
+    .projectImg {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .projectImg img {
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    .projectCard:nth-child(2) .projectImg {
+        width: 100%;
+    }
+
+    .projectCard:nth-child(2) .projectDetails {
+        width: 100%;
+    }
+
+    .projectDetails {
+        padding: 20px;
+    }
+
+    .projectTechList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .for-desktop {
+        display: none;
+    }
+
+    .for-mobile {
+        display: block;
+    }
+
+    .projectLink {
+        justify-content: flex-start;
     }
 }

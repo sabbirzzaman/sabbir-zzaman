@@ -26,7 +26,7 @@
 }
 
 .skillsList li::before {
-    content: "▹";
+    content: '▹';
     position: absolute;
     left: 0px;
     color: var(--green);
@@ -42,4 +42,24 @@
     top: 20px;
     left: 20px;
     z-index: -1;
+}
+
+/* Extra small devices (576px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .skillsList {
+        gap: 8px;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .aboutSection .container {
+        padding: 50px 0px;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
 }

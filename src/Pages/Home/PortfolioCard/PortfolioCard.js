@@ -7,11 +7,15 @@ const PortfolioCard = ({ project }) => {
     return (
         <div className="projectCard">
             <div className="projectContent">
-                <p className="title-sm">
-                    <span className="highlight">Featured Post</span>
-                </p>
+                <div className="for-desktop">
+                    <p className="title-sm">
+                        <span className="highlight">Featured Post</span>
+                    </p>
 
-                <a href={liveLink} target="_blank" rel="noreferrer"><h4 className="projectName">{name}</h4></a>
+                    <a href={liveLink} target="_blank" rel="noreferrer">
+                        <h4 className="projectName">{name}</h4>
+                    </a>
+                </div>
 
                 <p className="projectDetails text-sm">{details}</p>
 
@@ -62,6 +66,15 @@ const PortfolioCard = ({ project }) => {
             </div>
 
             <div className="projectImg">
+                <div className="for-mobile">
+                    <p className="title-sm">
+                        <span className="highlight">Featured Post</span>
+                    </p>
+
+                    <a href={liveLink} target="_blank" rel="noreferrer">
+                        <h4 className="projectName">{name}</h4>
+                    </a>
+                </div>
                 <a href={liveLink} target="_blank" rel="noreferrer">
                     <img src={img} alt={name} />
                 </a>

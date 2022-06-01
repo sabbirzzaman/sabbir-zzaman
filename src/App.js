@@ -13,7 +13,7 @@ function App() {
         setTimeout(() => {
             setLoading(false);
         }, 2000);
-    }, []);
+}, []);
 
     if (loading){
         return <Loading></Loading>

@@ -1,3 +1,10 @@
 .portfolioSection .container {
     padding: 80px 0px;
 }
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .portfolioSection .container {
+        padding: 50px 0px;
+    }
+}
