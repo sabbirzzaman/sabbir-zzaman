@@ -1,30 +1,24 @@
 .headerSection {
-    background-color: var(--navy-bg);
     position: sticky;
     top: 0;
-    z-index: 100;
-}
-
-.headerSectionScroll {
-    background-color: var(--navy-bg);
-    position: sticky;
-    top: 0;
-    box-shadow: 0 20px 30px -15px var(--shadow);
     z-index: 100;
 }
 
 .headerSection .pageContainer {
+    background-color: var(--navy-bg);
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: var(--tr);
 }
-
-.headerSectionScroll .pageContainer {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headerSection .pageContainer.headerScroll {
+    background: rgba(17, 34, 64, 0.78);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.2px);
+    -webkit-backdrop-filter: blur(14.2px);
+    height: 80px;
+    box-shadow: 0 20px 30px -15px var(--shadow);
 }
 
 .siteLogo {

@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home/Home';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Loading from './Pages/Common/Loading/Loading';
+import NotFounded from './Pages/Common/NotFounded/NotFounded';
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
             <Header></Header>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
+                <Route path="*" element={<NotFounded />}></Route>
             </Routes>
             <Footer></Footer>
         </>

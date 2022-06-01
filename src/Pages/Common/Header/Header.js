@@ -5,15 +5,21 @@ import './Header.css';
 const Header = () => {
     const navigate = useNavigate();
 
-    const [header, setHeader] = useState('headerSection');
+    const [header, setHeader] = useState('pageContainer');
 
     const [open, setOpen] = useState(false)
 
     const listenScrollEvent = () => {
         window.scrollY < 10
-            ? setHeader('headerSection')
-            : setHeader('headerSectionScroll');
+            ? setHeader('pageContainer')
+            : setHeader('pageContainer headerScroll');
     };
+
+    if(open) {
+        document.body.style.overflowY = 'hidden'
+    } else {
+        document.body.style.overflowY = 'unset'
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', listenScrollEvent);
@@ -22,8 +28,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={header}>
-            <div className="pageContainer">
+        <header className="headerSection">
+            <div className={header}>
                 <div>
                     <h3 className='siteLogo' onClick={() => navigate('/')}>
                         SZ<span className="highlight">.</span>
