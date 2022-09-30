@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
-import Footer from './Pages/Common/Footer/Footer';
-import Header from './Pages/Common/Header/Header';
-import Home from './Pages/Home/Home/Home';
+import Footer from './components/Common/Footer/Footer';
+import Header from './components/Common/Header/Header';
+import Home from './components/Home/Home/Home';
 import './App.css';
 import { useEffect, useState } from 'react';
-import Loading from './Pages/Common/Loading/Loading';
-import NotFounded from './Pages/Common/NotFounded/NotFounded';
+import Loading from './components/Common/Loading/Loading';
+import NotFounded from './components/Common/NotFounded/NotFounded';
 
 function App() {
     const [loading, setLoading] = useState(true);

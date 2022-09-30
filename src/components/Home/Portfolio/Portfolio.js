@@ -2,6 +2,8 @@ import React from 'react';
 import project1 from '../../../images/project-1.jpg';
 import project2 from '../../../images/project-2.jpg';
 import project3 from '../../../images/project-3.jpg';
+import project4 from '../../../images/project-4.png';
+import project5 from '../../../images/project-5.png';
 import PortfolioCard from '../PortfolioCard/PortfolioCard';
 import './Portfolio.css';
 
@@ -36,6 +38,24 @@ const Portfolio = () => {
             ],
             liveLink: 'https://go-autocar.web.app/',
             repoLink: 'https://github.com/sabbirzzaman/go-autocar-client',
+        },
+        {
+            name: 'ChatX',
+            img: project4,
+            details:
+                'A real-time chat application that allows you to communicate by sending and receiving messages. Implemented infinite scroll for both chat body and conversation list for a better user experience.',
+            technologies: ['React.js', 'Redux', 'Rtk Query', 'Socket.io', 'Tailwind CSS'],
+            liveLink: 'https://chat-x-redux.netlify.app/',
+            repoLink: 'https://github.com/sabbirzzaman/chat-x',
+        },
+        {
+            name: 'Project Management',
+            img: project5,
+            details:
+                'A single-page web application that allows you to empower your team to manage any type of project. Users can create teams and assign members to them. Also, the creator or member can delete a team. Users can create a project and assign it to any team and users can drag and drop it to change status.',
+            technologies: ['React.js', 'Redux', 'Rtk Query', 'React DND', 'Tailwind CSS'],
+            liveLink: 'https://project-management-redux.netlify.app/',
+            repoLink: 'https://github.com/sabbirzzaman/project-management',
         },
         {
             name: 'Tim Walter',
